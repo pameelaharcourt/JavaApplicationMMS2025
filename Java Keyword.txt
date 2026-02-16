@@ -1,0 +1,115 @@
+📌 Java Keywords and Their Functions
+
+1. abstract – Used to declare incomplete classes or methods that must be implemented by subclasses.
+
+2. assert – Tests if a condition is true; used for debugging.
+
+3. boolean – Declares a variable that stores true or false.
+
+4. break – Stops a loop or switch statement immediately.
+
+5. byte – Declares a small integer variable (8-bit).
+
+6. case – Defines a branch inside a switch statement.
+
+7. catch – Handles an exception after try.
+
+8. char – Stores a single character (like 'A').
+
+9. class – Defines a blueprint for creating objects.
+
+10.const – Reserved word (not used in Java).
+
+11. continue – Skips the current loop iteration and moves to the next one.
+
+12. default – Executes when no case matches in a switch.
+
+13. do – Starts a do-while loop (runs at least once).
+
+14. double – Stores decimal numbers (64-bit floating point).
+
+15. else – Runs when an if condition is false.
+
+16. enum – Defines a fixed set of constants.
+
+17. extends – Allows one class to inherit from another.
+
+18. final – Prevents change (variable can’t change, method can’t override, class can’t inherit).
+
+19. finally – Block that always runs after try-catch.
+
+20. float – Stores decimal numbers (32-bit floating point).
+
+21. for – Creates a loop with initialization, condition, and update.
+
+22. goto – Reserved but not used in Java.
+
+23. if – Executes code when a condition is true.
+
+24. implements – Used when a class follows an interface.
+
+25. import – Brings other classes/packages into your file.
+
+26. instanceof – Checks if an object belongs to a certain class.
+
+27. int – Stores whole numbers (32-bit).
+
+28. interface – Defines methods a class must implement.
+
+29. long – Stores large whole numbers (64-bit).
+
+30. native – Indicates method is written in another language (like C).
+
+31. new – Creates a new object.
+
+32. package – Groups related classes together.
+
+33. private – Accessible only within the same class.
+
+34. protected – Accessible within the package and subclasses.
+
+35. public – Accessible everywhere.
+
+36. return – Sends a value back from a method.
+
+37. short – Stores small whole numbers (16-bit).
+
+38. static – Belongs to the class, not to objects.
+
+39. strictfp – Controls floating-point precision strictly.
+
+40. super – Refers to the parent class.
+
+41. switch – Selects one option from many choices.
+
+42. synchronized – Controls access in multi-threading.
+
+43. this – Refers to the current object.
+
+44. throw – Manually throws an exception.
+
+45. throws – Declares exceptions a method may pass.
+
+46. transient – Prevents variable from being serialized.
+
+47. try – Wraps code that might cause an exception.
+
+48. void – Means a method returns nothing.
+
+49. volatile – Ensures variable updates are visible across threads.
+
+50. while – Repeats code while condition is true.
+
+51. true – Boolean true value.
+
+52. false – Boolean false value.
+
+53. null – Represents no object reference.
+
+54. _ (underscore) – Reserved keyword (not usable as identifier from Java 9).
+
+55. var – Used for local variable type inference (Java 10+).
+
+56. record – Declares immutable data classes (Java 14+).
+
+57. yield – Returns a value from a switch expression (Java 14+).

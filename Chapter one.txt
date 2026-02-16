@@ -1,0 +1,558 @@
+Chapter 1
+Self-Review Exercises 1.1
+
+ Fill in the blanks in each of the following statements:
+
+ a) Computers process data under the control of sets of instructions called Programs. 
+b) The key logical units of the computer are the input unit, output unit, memory unit, arithmetic and logic unit (ALU), secondary storage unit and central processing unit (CPU). 
+c) The three types of languages they are machine language, assembly language and high-level language.
+d) The programs that translate high-level language programs into machine language are called compilers. 
+e) Android is an operating system for mobile devices based on the Linux kernel and Java. 
+f) Release software is generally feature complete, (supposedly) bug free and ready for use by the community. 
+g) The Wii Remote, as well as many smartphones, use a(n) accelerometer  which allows the device to respond to motion. 
+
+1.2 Fill in the blanks in each of the following sentences about the Java environment:
+
+ a) The java command from the JDK executes a Java application. 
+b) The javac command from the JDK compiles a Java program. 
+c) A Java source code file must end with the .java file extension. 
+d) When a Java program is compiled, the file produced by the compiler ends with the .class file extension. 
+e) The file produced by the Java compiler contains bytecode that are executed by the Java Virtual Machine. 
+
+1.3 Fill in the blanks in each of the following statements 
+
+a) Objects enable the design practice of information hiding (encapsulation), although they may know how to communicate with one another across well-defined interfaces, they normally are not allowed to know how other objects are implemented. 
+b) Java programmers concentrate on creating classes, which contain fields and the set of methods that manipulate those fields and provide services to clients. 
+c) The process of analyzing and designing a system from an object-oriented point of view is called object-oriented analysis and design (OOAD). 
+d) A new class of objects can be created conveniently by inheritance, the new class (called the subclass) starts with the characteristics of an existing class (called the superclass), possibly customizing them and adding unique characteristics of its own. 
+e) UML (Unified Modeling Language) is a graphical language that allows people who design software systems to use an industry-standard notation to represent them. 
+f) The size, shape, color and weight of an object are considered attributes (properties) of the object’s class.
+
+Exercises 1.4 Fill in the blanks in each of the following statements: 
+
+a) The logical unit that receives information from outside the computer for use by the computer is the input unit. 
+b) The process of instructing the computer to solve a problem is called programming.
+c) Assembly language is a type of computer language that uses English-like abbreviations for machine-language instructions. 
+d) The output unit is a logical unit that sends information which has already been processed by the computer to various devices so that it may be used outside the computer. 
+e) Primary memory (main memory) and secondary storage are logical units of the computer that retain information. 
+f) The arithmetic unit (ALU) is a logical unit of the computer that performs calculations. 
+g) The logic unit (ALU) is a logical unit of the computer that makes logical decisions. 
+h) High-level languages languages are most convenient to the programmer for writing programs quickly and easily. 
+i) The only language a computer can directly understand is that computer’s machine language.
+j) The control unit is a logical unit of the computer that coordinates the activities of all the other logical units. 
+
+1.5 Fill in the blanks in each of the following statements: 
+
+a) The java programming language is now used to develop large-scale enterprise applications, to enhance the functionality of web servers, to provide applications for consumer devices and for many other purposes.
+ b) C initially became widely known as the development language of the UNIX operating system. 
+c) The TCP (Transmission Control Protocol) ensures that messages, consisting of sequentially numbered pieces called bytes, were properly routed from sender to receiver, arrived intact and were assembled in the correct order. 
+d) The C++   programming language was developed by Bjarne Stroustrup in the early 1980s at Bell Laboratories. 
+
+1.6 Fill in the blanks in each of the following statements: 
+
+a) Java programs normally go through five phases edit, compile, load, verify and execute. 
+b) An IDE (Integrated Development Environment) provides many tools that support the software development process, such as editors for writing and editing programs, debuggers for locating logic errors in programs, and many other features. 
+c) The command java invokes the Java Virtual Machine (JVM),which executes Java programs. 
+d) A virtual is a software application that simulates a computer, but hides the underlying operating system and hardware from the programs that interact with it.
+ e) The class loader takes the .class files containing the program’s bytecodes and transfers them to primary memory.
+ f) The bytecode verifier examines bytecodes to ensure that they’re valid.
+
+
+1.7 Explain the two compilation phases of Java programs. 
+
+Answer:
+
+Phase 1: Compilation (Source Code → Bytecode)
+	You write your program in a file ending with .java
+	The Java compiler (javac) checks your code for syntax errors
+	If everything is correct, it converts the code into bytecode
+	The output file ends with .class
+Example:
+MyProgram.java  →  (javac)  →  MyProgram.class
+
+Phase 2: Execution (Bytecode → Machine Code)
+	The Java Virtual Machine (JVM) takes the .class file
+	The JVM translates the bytecode into machine language
+	The program runs on your computer
+This second translation happens:
+	Either through interpretation
+	Or using a JIT (Just-In-Time) compiler for speed
+Example:
+PhaseWhat HappensTool Used1.java → .classjavac (compiler)2.class → Machine CodeJVM
+
+
+
+1.8 One of the world’s most common objects is a wrist watch. Discuss how each of the following terms and concepts applies to the notion of a watch: object, attributes, behaviors, class, inheritance (consider, for example, an alarm clock), modeling, messages, encapsulation, interface and information hiding.
+
+Answer:
+
+1. Object
+An object is a real-world thing.
+👉 A wristwatch is an object.
+It exists physically and has properties and actions.
+In Java thinking:
+Watch myWatch = new Watch();
+2. Attributes (Properties / State)
+Attributes describe what the object has.
+For a wristwatch, attributes could be:
+	Color
+	Brand
+	Current time
+	Battery level
+	Strap material
+	Water resistance
+In programming:
+String brand;
+String color;
+int hour;
+int minute;
+Note: Attributes represent the state of an object.
+
+3. Behaviors (Methods)
+Behaviors describe what the object can do.
+A watch can:
+	Show time
+	Set time
+	Set alarm
+	Start stopwatch
+	Turn on backlight
+In programming:
+setTime()
+showTime()
+setAlarm()
+
+4. Class
+A class is a blueprint.
+If “Watch” is the class, then:
+	All watches share common attributes and behaviors.
+	Each physical watch is an instance (object) of that class.
+In programming 
+java
+class Watch {
+   // attributes + behaviors
+}
+Note: The class defines the structure; objects are created from.
+
+5. Inheritance (Example: Alarm Clock)
+Inheritance means creating a new class from an existing one.
+For example:
+	Basic Watch → shows time
+	AlarmWatch → shows time + alarm
+	SmartWatch → shows time + alarm + fitness tracking
+So:
+Watch
+   ↓
+AlarmWatch
+   ↓
+SmartWatch
+Note: The alarm clock inherits from watch and adds new feature.
+6. Modeling
+Modeling means representing a real-world object in software.
+When we create a Watch class with attributes and methods, we are:
+👉 Modeling a real wristwatch inside a computer system.
+We simplify reality to focus only on important features.
+7. Messages
+Objects communicate using messages.
+In programming, this means calling methods.
+Example:
+java
+myWatch.setTime(10, 30);
+Note: Here, we are sending a message to the object:
+👉 “Please set your time to 10:30.”
+8. Encapsulation
+Encapsulation means:
+👉 Keeping data and methods together inside a class.
+The watch keeps:
+	Its time
+	Its battery level
+	Its internal mechanism
+All bundled inside one unit (the object).
+9. Interface
+Interface means:
+👉 What the user is allowed to interact with.
+On a real watch:
+	Buttons
+	Touch screen
+	Crown knob
+You don’t touch the internal gears.
+In programming:
+Public methods are the interface.
+10. Information Hiding
+Information hiding means:
+👉 Internal details are hidden from the outside.
+For example:
+	You don’t see how the watch calculates time.
+	You don’t see the circuits or gears working.
+	You just see the result (displayed time).
+In Java:
+java
+private int hour;
+private int minute;
+Note: Users can’t directly change internal data — they must use methods.
+
+
+
+
+
+Making a Difference
+
+1.9 (Test-Drive: Carbon Footprint Calculator) 
+Some scientists believe that carbon emissions, especially from the burning of fossil fuels, contribute significantly to global warming and that this can be combatted if individuals take steps to limit their use of carbon-based fuels. Organizations and individuals are increasingly concerned about their “carbon footprints.” Websites such as TerraPass http://www.terrapass.com/carbon-footprint-calculator/ and Carbon Footprint http://www.carbonfootprint.com/calculator.aspx provide carbon-footprint calculators. Test-drive these calculators to determine your carbon footprint. Exercises in later chapters will ask you to program your own carbon-footprint calculator. To prepare for this, use the web to research the formulas for calculating carbon footprints. 
+
+Answer:
+
+To “test-drive” a carbon-footprint calculator and prepare to build your own, you need to understand:
+	What data they collect
+	The formulas used
+	How emissions are converted to CO₂ equivalents (CO₂e)
+Below is a clear breakdown to guide you 👇
+________________________________________
+🌍 What Is a Carbon Footprint?
+A carbon footprint is the total amount of greenhouse gases (mainly CO₂) produced directly or indirectly by an individual, organization, or activity.
+It’s usually measured in:
+metric tons of CO₂ per year
+________________________________________
+🔥 Major Sources of Personal Carbon Emissions
+Most calculators use these categories:
+	Electricity usage
+	Transportation (car, flights)
+	Natural gas or cooking fuel
+	Waste
+	Diet (meat consumption)
+________________________________________
+🧮 Basic Carbon Footprint Formulas
+The general formula is:
+Carbon Emissions = Activity Data × Emission Factor
+Where:
+	Activity Data = how much energy or fuel you use
+	Emission Factor = how much CO₂ is produced per unit
+________________________________________
+⚡ 1. Electricity Emissions
+CO₂ = Electricity used (kWh) × Emission factor
+Example:
+If you use 900 kWh per month:
+Emission factor (average global):
+≈ 0.4 kg CO₂ per kWh
+900 × 0.4 = 360 kg CO₂ per month
+________________________________________
+🚗 2. Car Fuel Emissions
+For petrol (gasoline):
+CO₂ = Liters of fuel × 2.31 kg CO₂ per liter
+For diesel:
+CO₂ = Liters × 2.68 kg CO₂ per liter
+Example:
+If you use 50 liters petrol:
+50 × 2.31 = 115.5 kg CO₂
+________________________________________
+✈️ 3. Flight Emissions
+Approximate formula:
+CO₂ = Distance (km) × Emission factor
+Short flight factor:
+≈ 0.15–0.20 kg CO₂ per passenger per km
+Example:
+1,000 km flight:
+1,000 × 0.18 = 180 kg CO₂
+________________________________________
+🔥 4. Natural Gas Emissions
+CO₂ = Cubic meters × 2.0 kg CO₂
+________________________________________
+🗑️ 5. Waste Emissions
+Some calculators estimate:
+CO₂ = Waste generated (kg) × methane conversion factor
+Methane is converted to CO₂ equivalent (CO₂e).
+________________________________________
+🥩 6. Diet Impact
+High meat consumption increases emissions.
+Approximate yearly averages:
+	Vegan: ~1.5 tons CO₂
+	Vegetarian: ~1.7 tons CO₂
+	Mixed diet: ~2.5 tons CO₂+
+	Heavy meat diet: ~3+ tons CO₂
+________________________________________
+📊 Final Carbon Footprint
+Total footprint:
+Total CO₂ = Electricity + Transport + Flights + Gas + Waste + Food
+Converted to:
+Metric tons per year (divide kg by 1000)
+________________________________________
+🧠 What You Should Notice (For Programming Later)
+Most calculators:
+	Ask for monthly usage
+	Multiply by emission factors
+	Add everything together
+	Display result in tons/year
+	Sometimes compare to national averages
+________________________________________
+💻 How You Would Program This Later (Java Idea)
+You’d likely:
+	Create a class called CarbonFootprint
+	Add attributes:
+	electricityUsage
+	fuelUsed
+	flightDistance
+	Add methods:
+	calculateElectricityEmission()
+	calculateTransportEmission()
+	calculateTotalEmission()
+
+
+1.10 (Test-Drive: Body Mass Index Calculator) 
+Obesity causes significant increases in illnesses such as diabetes and heart disease. To determine whether a person is overweight or obese, you can use a measure called the body mass index (BMI). The United States Department of Health and Human Services provides a BMI calculator at http://www.nhlbi.nih.gov/guidelines/obesity/BMI/ bmicalc.htm. Use it to calculate your own BMI. A forthcoming exercise will ask you to program your own BMI calculator. To prepare for this, use the web to research the formulas for calculating BMI. 
+
+Answer:
+
+To prepare for building your own BMI (Body Mass Index) calculator, you mainly need to understand:
+	The formula
+	The BMI categories
+	How to structure it in a program
+Let’s go step by step 👇
+________________________________________
+📏 What Is BMI?
+Body Mass Index (BMI) is a number calculated from your weight and height to determine whether you are:
+	Underweight
+	Normal weight
+	Overweight
+	Obese
+It is widely used by health organizations, including the U.S. Department of Health and Human Services.
+________________________________________
+🧮 BMI Formulas
+There are two common formulas, depending on the measurement system.
+________________________________________
+✅ 1️⃣ Metric Formula (kg & meters)
+BMI=(weight" 								" (kg))/(height^2 " 								" (m^2))
+
+Example:
+Weight = 70 kg
+Height = 1.75 m
+BMI=70/(1.75)^2 ┤ 
+BMI=70/3.0625=22.86
+
+________________________________________
+✅ 2️⃣ Imperial Formula (pounds & inches)
+BMI=(weight" 								" (lb)×703)/(height^2 " 								" (in^2))
+
+The number 703 is a conversion factor.
+Example:
+Weight = 154 lb
+Height = 69 inches
+BMI=(154×703)/69^2 
+
+________________________________________
+📊 BMI Categories
+BMI RangeCategoryBelow 18.5Underweight18.5 – 24.9Normal25.0 – 29.9Overweight30.0 and aboveObese________________________________________
+💻 How You Would Program This (Logic Thinking)
+Since you're building your software engineering foundation, here’s the logical flow:
+	Ask user for weight
+	Ask user for height
+	Calculate BMI
+	Use if-else to determine category
+	Display result
+________________________________________
+🧠 Algorithm (Pseudocode)
+START
+INPUT weight
+INPUT height
+BMI = weight / (height * height)
+
+IF BMI < 18.5
+    PRINT "Underweight"
+ELSE IF BMI < 25
+    PRINT "Normal"
+ELSE IF BMI < 30
+    PRINT "Overweight"
+ELSE
+    PRINT "Obese"
+END
+________________________________________
+⚠️ Important Note
+BMI:
+	Does not measure body fat directly
+	May not be accurate for athletes (high muscle mass)
+	Is mainly a screening tool
+
+
+1.11 (Attributes of Hybrid Vehicles) 
+Hybrid vehicles are becoming increasingly popular, because they often get much better mileage than purely gasoline-powered vehicles. Browse the web and study the features of four or five of today’s popular hybrid cars, then list as many of their hybrid-related attributes as you can. Some common attributes include city-miles-per-gallon and highway-miles-per-gallon. Also list the attributes of the batteries (type, weight, etc.). 
+
+Answer:
+
+Here’s a summary of attributes for several popular hybrid vehicles based on real-world specs and research — useful for comparing what you might include in a project or database:
+________________________________________
+🚗 Popular Hybrid Vehicles & Their Attributes
+1. Toyota Prius
+	🛣️ Excellent fuel economy – up to 57 MPG combined (city & highway) — one of the highest among hybrids. 
+	⛽ Combines a gasoline engine with an electric motor for efficiency. 
+	🔋 Battery type typically Nickel-Metal Hydride (Ni-MH) or lithium-ion depending on trim. (Common in Prius) 
+	⚖️ Lightweight hybrid battery compared with older designs, boosting MPG. 
+	📏 Long total driving range per tank — typically over 600 miles. 
+Attributes you can list: city MPG, highway MPG, combined MPG, battery type, battery size/weight, total range, hybrid system type.
+________________________________________
+2. Hyundai Sonata Hybrid
+	🛣️ Fuel economy around 44 MPG city / 51 MPG highway. 
+	⚡ Mid-size sedan with efficient hybrid system. 
+	🔋 Uses a battery integrated with electric motor and gasoline engine. 
+Attributes: Fuel economy (city, highway, combined), engine + motor specs, battery type.
+________________________________________
+3. Kia Niro
+	🛣️ Up to 53 MPG combined, with slightly varied city/highway numbers. 
+	🚙 Crossover design adds versatility. 
+	🔋 Battery supports power blending between electric and gasoline. 
+Attributes: Combined fuel economy, vehicle type (crossover), battery tech, driving range.
+________________________________________
+4. Honda Accord Hybrid
+	🛣️ Around 50 MPG city / 45 MPG highway (roughly 47 MPG combined). 
+	⚙️ Uses dual-motor hybrid system with lithium-ion battery. 
+	🔋 Battery pack integrated with the hybrid control system. 
+Attributes: City, highway, combined MPG; battery type; horsepower; hybrid drivetrain details.
+________________________________________
+5. Ford Escape Hybrid
+	🛣️ Fuel economy ~ 39–42 MPG combined depending on version. 
+	⚙️ Usually pairs a 2.5 L Atkinson-cycle engine with electric motor. 
+	🔋 Battery pack integrated in rear/underbody for weight balance. 
+Attributes: Combined MPG, engine + electric motor specs, battery placement/weight, drivetrain options (FWD/AWD).
+________________________________________
+6. Subaru Crosstrek Hybrid
+	🛣️ EPA rating about 36 MPG combined (36 city & highway). 
+	🚙 Compact SUV with standard all-wheel drive for traction. 
+	💪 194 hp powertrain combining gasoline and electric motors. 
+Attributes: Combined MPG, horsepower, SUV body style, AWD, battery placement.
+________________________________________
+🔋 Common Battery Attributes to Collect
+When researching hybrid vehicles, some useful battery-related attributes include:
+	Battery type – e.g., Nickel-Metal Hydride (Ni-MH) or Lithium-ion. 
+	Battery weight – influences vehicle weight and efficiency. 
+	Battery capacity (kWh or Ah) – energy storage size influences electric-assist duration. 
+	Placement – trunk, under seats, or under floor affects cargo space and center of gravity. 
+	Electric-only range (for some plug-in hybrids like Lexus NX450h+). 
+________________________________________
+📌 Summary of Useful Attributes
+Here’s a checklist you could use in your research or your future hybrid vehicle program:
+Fuel Economy
+	City MPG
+	Highway MPG
+	Combined MPG
+	Total driving range (miles)
+Powertrain
+	Engine type/displacement
+	Electric motor power
+	Total system horsepower
+	Drivetrain (FWD/AWD)
+Battery
+	Battery type (Ni-MH, Li-ion)
+	Capacity (kWh or Ah)
+	Weight (kg)
+	Location in vehicle
+	Electric-only range (if plug-in)
+Other
+	Vehicle type (sedan, SUV, crossover)
+	Cargo capacity impacts due to battery
+	Safety and tech features
+
+
+1.12 (Gender Neutrality) 
+Many people want to eliminate sexism in all forms of communication. You’ve been asked to create a program that can process a paragraph of text and replace gender-specific words with gender-neutral ones. Assuming that you’ve been given a list of gender-specific words and their gender-neutral replacements (e.g., replace both “wife” and “husband” with “spouse,” “man” and “woman” with “person,” “daughter” and “son” with “child”), explain the procedure you’d use to read through a paragraph of text and manually perform these replacements. How might your procedure generate a strange term like “woperchild?” You’ll soon learn that a more formal term for “procedure” is “algorithm,” and that an algorithm specifies the steps to be performed and the order in which to perform them. We’ll show how to develop algorithms then convert them to Java programs which can be run on computers.
+
+Anwser:
+
+Step-by-Step Procedure (Algorithm)
+Assume you are given:
+wife → spouse
+husband → spouse
+man → person
+woman → person
+daughter → child
+son → child
+________________________________________
+🔹 Step 1: Store the Replacement Pairs
+Create a list (or dictionary) that stores:
+	Gender-specific word
+	Corresponding gender-neutral word
+Example structure:
+("wife", "spouse")
+("husband", "spouse")
+("man", "person")
+...
+________________________________________
+🔹 Step 2: Read the Paragraph
+Take the paragraph as input.
+Example:
+The woman told her husband that their daughter is a smart young woman.
+________________________________________
+🔹 Step 3: Process the Text Word by Word
+Split the paragraph into individual words.
+For each word:
+	Check if it matches a gender-specific word.
+	If it does → replace it.
+	If it doesn’t → leave it unchanged.
+________________________________________
+🔹 Step 4: Preserve Case (Optional Improvement)
+If the word is capitalized:
+	“Woman” → “Person”
+So the program should:
+	Detect capitalization
+	Apply replacement
+	Restore original case format
+________________________________________
+🔹 Step 5: Rebuild the Paragraph
+Join the modified words back into a full paragraph.
+________________________________________
+🧠 Example Transformation
+Original:
+The woman told her husband that their daughter is a smart young woman.
+After replacement:
+The person told her spouse that their child is a smart young person.
+________________________________________
+⚠️ Why Might It Produce “woperchild”?
+This happens if you use naïve substring replacement instead of whole-word replacement.
+For example:
+If you blindly replace:
+man → person
+son → child
+And you process the word:
+woman
+Step 1: Replace "man" inside "woman"
+wo + person = woperson
+Step 2: Replace "son" inside "woperson"
+wo + perchild = woperchild
+So:
+woman → woperchild  ❌
+This happens because:
+	The algorithm replaces parts of words
+	Instead of matching complete words only
+_______________________________________
+✅ How to Prevent That Problem
+The algorithm must:
+	Replace only whole words
+	Not replace parts of longer words
+	Use word boundaries
+Better logic:
+Instead of:
+Replace all occurrences of "man"
+Use:
+Replace only if the word equals "man"
+________________________________________
+🧠 Improved Algorithm
+	Read paragraph.
+	Split into words.
+	For each word:
+	Remove punctuation temporarily.
+	Compare the word exactly with dictionary keys.
+	If match → replace.
+	Reattach punctuation.
+	Join words back together.
+	Output result.
+________________________________________
+💻 If You Later Implement in Java
+You would likely:
+	Use a HashMap<String, String>
+	Use .split(" ")
+	Compare using .equalsIgnoreCase()
+	Avoid .replace() on full string blindly
+________________________________________
+📌 Key Learning Point
+This exercise teaches:
+	The importance of careful algorithm design
+	Why order of operations matters
+	Why simple text replacement can produce unintended results
+	The need to think about edge cases
+
