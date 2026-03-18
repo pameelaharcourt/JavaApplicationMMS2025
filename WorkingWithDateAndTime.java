@@ -11,7 +11,7 @@ public class WorkingWithDateAndTime{
 		// using parse method
 		LocalDate resumptionDate = LocalDate.parse("2026-06-17");
 		
-		// using the time methhd
+		// using the time method
 		
 		if(myDate.equals(currentDate)) {
 			System.out.println("Today is the day of your appointment");

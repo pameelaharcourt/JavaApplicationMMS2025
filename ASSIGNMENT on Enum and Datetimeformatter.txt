@@ -1,0 +1,48 @@
+ASSIGNMENT
+1. Write a code for DateTimeFormater class
+2. Write a code for Enum
+
+DateTimeFormater:
+DateTimeFormater is a class in java used to format and sparse date and time. it belongs to the package:java.time.format ,
+
+it works with the modern Java Date-Timpe API (java.time) such as:
+a. LocalDate
+b. LocalTime
+C. LocalDateTime
+
+In simple terms; DateTimeFormatter is used to convert dates and times into a specific readable format or convert string back into date objects.
+
+
+
+Enum:
+An Enum (enumeration) in java is a special data type used to define a fixed set of constants. In simple terms, is used to represent a group of fixed constants so that your program only uses valid predefined values.
+
+Examples: 
+1. Days of the week.
+2. Directions(NORTH, SOUTH, EAST, WEST).
+3. Status values (SUCESS, FAILED, PENDING)
+
+Using Enum makes code safer, cleaner, and easier to read, because the program only accepts the defined values.
+
+What is Enum Used For?
+Enum are used when you want to represent  fixed group of related constants.
+
+Examples:
+
+Example	Enum Values
+Days of the week	MONDAY, TUESDAY, WEDNESDAY
+Traffic light	RED, YELLOW, GREEN
+Order status	PENDING, SHIPPED, DELIVERED
+Game difficulty	EASY, MEDIUM, HARD
+
+Example error prevention:
+
+Day today = Day.MONDAY; //correct
+Day today = Day.HOLIDAY;// Error(not defined)
+
+
+Advantages of Enum
+1. Type Safety: only allowed values can be used.
+2. Readable Code: Makes code easier to understand.
+3. Prevents Errors: Avoids invalid values.
+4. Works with switch Statements: Makes logic easier.
